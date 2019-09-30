@@ -1,15 +1,36 @@
 {
   "name": "your-anilist",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "author": "Igor Guastalla de Lima",
+  "license": "MIT",
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --port=3333",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "now"
   },
   "dependencies": {
+    "@apollo/react-hooks": "^3.1.1",
+    "@apollo/react-ssr": "^3.1.1",
+    "@zeit/next-css": "^1.0.1",
+    "apollo-boost": "^0.4.4",
+    "apollo-cache-inmemory": "^1.6.3",
+    "apollo-client": "^2.6.4",
+    "apollo-link-http": "^1.5.16",
+    "graphql": "^14.5.8",
+    "humanize-duration": "^3.21.0",
+    "isomorphic-unfetch": "^3.0.0",
     "next": "9.0.7",
+    "nprogress": "^0.2.0",
+    "prop-types": "^15.7.2",
     "react": "16.10.1",
+    "react-apollo": "^3.1.1",
     "react-dom": "16.10.1"
+  },
+  "devDependencies": {
+    "graphql-tag": "^2.10.1",
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^1.1.2"
   }
 }
