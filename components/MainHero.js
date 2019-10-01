@@ -1,4 +1,4 @@
-const InfoBox = ({ children }) => (
+const InfoBox = () => (
   <div class="pt-24">
     <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
       <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
@@ -11,9 +11,6 @@ const InfoBox = ({ children }) => (
         <img class="w-full md:w-4/5 z-50" src="hero.png"/>
       </div>
     </div>
-    <style jsx>{`
-    `}</style>
-    {children}
   </div>
 )
 
